@@ -10,7 +10,7 @@ import retrofit2.http.Path
 interface CentroFuturoApi {
 
     @GET("courses")
-    suspend fun fetchListCourse(): Response<List<Courses>>
+    suspend fun fetchListCoursesList(): Response<List<Courses>>
 
     @GET("courses/{id}")
     suspend fun fetchDetailCourse(@Path("id") id:String): Response<CourseDetail>

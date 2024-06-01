@@ -31,7 +31,8 @@ interface CentroFuturoDao {
     @Delete
     suspend fun deleteCourse(courses: CoursesEntity)
 
-    @Query("SELECT * FROM course_list_table")
+    //Listado de cursos
+    @Query("SELECT * FROM course_list_table ORDER BY id ASC")
     fun getAllCourses(): LiveData<List<CoursesEntity>>
 
     @Query("SELECT * FROM course_list_table WHERE id = :id")
@@ -44,7 +45,7 @@ interface CentroFuturoDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAllDetailsCourse(courseDetail : List<CoursesDetailEntity>)
 
-    //Insertar un detalle
+    //Insertar un detalle de curso
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertDetailCourse(courseDetail : CoursesDetailEntity)
 
@@ -57,7 +58,7 @@ interface CentroFuturoDao {
     suspend fun deleteDetailCourse(courseDetail: CoursesDetailEntity)
 
     //Mostrar todos los detalles
-    @Query("SELECT * FROM course_detail_table")
+    @Query("SELECT * FROM course_detail_table ORDER BY id ASC")
     fun getAllDetailCourses():LiveData<List<CoursesDetailEntity>>
 
     //Mostrar detalle por id

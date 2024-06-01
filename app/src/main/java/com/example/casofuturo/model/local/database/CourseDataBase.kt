@@ -9,7 +9,6 @@ import com.example.casofuturo.model.local.entities.CoursesDetailEntity
 import com.example.casofuturo.model.local.entities.CoursesEntity
 
 @Database(entities = [CoursesDetailEntity::class, CoursesEntity::class], version = 1, exportSchema = false)
-
 abstract class CourseDataBase : RoomDatabase(){
     abstract fun getCentroFuturoDao(): CentroFuturoDao
 
@@ -27,7 +26,7 @@ abstract class CourseDataBase : RoomDatabase(){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     CourseDataBase::class.java,
-                    "cursoFuturo"
+                    "CURSOFUTURO"
                 )
                     .build()
                 INSTANCE= instance

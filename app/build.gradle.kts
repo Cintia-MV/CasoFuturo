@@ -57,7 +57,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
     // Retrofit with Scalar Converter
-    //implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+    implementation ("com.squareup.retrofit2:converter-scalars:2.9.0")
 
     // Glide
     implementation ("com.github.bumptech.glide:glide:4.16.0")
