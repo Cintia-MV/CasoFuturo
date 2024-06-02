@@ -41,7 +41,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -80,10 +79,8 @@ dependencies {
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
-
     //Mockito framework
-    testImplementation("org.mockito:mockito-core:1.10.19")
-
+    testImplementation("org.mockito:mockito-core:2.25.0")
 
     //Dependencias de mockWebserver
     //Dependencia de OkHttp
@@ -91,9 +88,6 @@ dependencies {
 
     //Dependencia de okHttp MockWebServer (para pruebas)
     testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
-
-
-
 
     //For Robolectric tests
     testImplementation("com.google.dagger:hilt-android-testing:2.44")
@@ -109,8 +103,4 @@ dependencies {
     androidTestAnnotationProcessor("com.google.dagger:hilt-android-compiler:2.44")
 
     testImplementation ("androidx.arch.core:core-testing:2.1.0")
-
-
-
-
 }

@@ -5,6 +5,12 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="insertCoursesList()">
+        <State />
+      </entry>
+      <entry key="testCrudOperations()">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
