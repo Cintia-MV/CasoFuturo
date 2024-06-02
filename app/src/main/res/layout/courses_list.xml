@@ -24,9 +24,9 @@
         tools:layout_editor_absoluteY="30dp">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="300dp"
-            android:layout_height="175dp"
+            android:id="@+id/imgCurso"
+            android:layout_width="261dp"
+            android:layout_height="228dp"
             android:layout_weight="1"
             tools:src="@tools:sample/avatars" />
 
@@ -50,10 +50,27 @@
             <TextView
                 android:id="@+id/previewDesc"
                 android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/weeks"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
                 android:text="TextView" />
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="TextView" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
